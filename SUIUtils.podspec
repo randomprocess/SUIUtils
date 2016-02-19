@@ -23,11 +23,11 @@ s.subspec 'Tool' do |ss|
 ss.source_files = 'SUIUtils/Tool/*.{h,m}'
 end
 
-s.subspec 'Foundation' do |s|
+s.subspec 'Foundation' do |ss|
 ss.source_files = 'SUIUtils/Foundation/*.{h,m}'
 end
 
-s.subspec 'UIKit' do |s|
+s.subspec 'UIKit' do |ss|
 ss.dependency 'SUIUtils/Foundation'
 ss.source_files = 'SUIUtils/UIKit/*.{h,m}'
 end
