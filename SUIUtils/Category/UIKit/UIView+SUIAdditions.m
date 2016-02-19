@@ -357,20 +357,20 @@
     return nil;
 }
 
-- (UIView *)sui_firstSubviewOfClass:(Class)aClass
+- (UIView *)sui_findSubview:(NSString *)className
 {
     for (UIView *subView in self.subviews) {
-        if ([subView isKindOfClass:aClass]) {
+        if ([subView isKindOfClass:NSClassFromString(className)]) {
             return subView;
         }
     }
     return nil;
 }
-- (UIView *)sui_firstSupviewOfClass:(Class)aClass;
+- (UIView *)sui_findSupview:(NSString *)className;
 {
     for (UIView *next = [self superview]; next; next = next.superview) {
         UIView *curView = [next superview];
-        if ([curView isKindOfClass:aClass]) {
+        if ([curView isKindOfClass:NSClassFromString(className)]) {
             return curView;
         }
     }

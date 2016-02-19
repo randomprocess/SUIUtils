@@ -30,7 +30,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)sui_each:(void (^)(ObjectType obj, NSUInteger index))cb;
 
+- (void)sui_eachReverse:(void (^)(ObjectType obj, NSUInteger index))cb;
+
 - (void)sui_eachWithStop:(BOOL (^)(ObjectType obj, NSUInteger index))cb;
+
+- (void)sui_eachReverseWithStop:(BOOL (^)(ObjectType obj, NSUInteger index))cb;
 
 - (instancetype)sui_map:(id (^)(ObjectType obj, NSUInteger index))cb;
 

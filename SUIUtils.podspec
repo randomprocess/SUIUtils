@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
 s.name         = 'SUIUtils'
-s.version      = '1.0.0'
+s.version      = '0.0.1'
 s.platform     = :ios, '7.0'
 s.summary      = 'A collection of convenient classes for iOS.'
 
@@ -26,17 +26,12 @@ end
 s.subspec 'Categorie' do |ss|
 
 ss.subspec 'Foundation' do |sss|
-sss.source_files = 'SUIUtils/Categorie/Foundation/*.{h,m}'
+sss.source_files = 'SUIUtils/Category/Foundation/*.{h,m}'
 end
 
 ss.subspec 'UIKit' do |sss|
 sss.dependency 'SUIUtils/Categorie/Foundation'
-sss.source_files = 'SUIUtils/Categorie/UIKit/*.{h,m}'
-end
-
-ss.subspec 'BlurEffect' do |sss|
-sss.frameworks = 'Accelerate'
-sss.source_files = 'SUIUtils/Categorie/BlurEffect/*.{h,m}'
+sss.source_files = 'SUIUtils/Category/UIKit/*.{h,m}'
 end
 
 end

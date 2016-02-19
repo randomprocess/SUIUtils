@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "SUIUtils.h"
 
 @interface AppDelegate ()
 
@@ -18,28 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
-    NSArray<NSString *> *curAry = @[@"miao", @"sss", @"aoaoa", @"uuuu"];
-    
-    curAry = [curAry sui_map:^id _Nonnull(NSString * _Nonnull obj, NSUInteger index) {
-        if (index == 0) {
-            return @"zzzzzz";
-        }
-        return @"SSSSS";
-    }];
-    
-    
-    [curAry sui_eachWithStop:^BOOL(NSString * _Nonnull obj, NSUInteger index) {
-        SUILogObj(obj);
-        if (index == 2) {
-            return YES;
-        }
-        return NO;
-    }];
-
-
-    
-    
     return YES;
 }
 

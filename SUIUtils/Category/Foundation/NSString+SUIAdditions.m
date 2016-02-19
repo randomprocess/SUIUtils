@@ -320,8 +320,7 @@
     NSDictionary *attributes = @{NSFontAttributeName: textFont,
                                  NSParagraphStyleAttributeName: paragraph};
     CGSize textSize = [self boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX)
-                                         options:(NSStringDrawingUsesLineFragmentOrigin |
-                                                  NSStringDrawingTruncatesLastVisibleLine)
+                                         options:(NSStringDrawingUsesLineFragmentOrigin)
                                       attributes:attributes
                                          context:nil].size;
     CGSize curSize = CGSizeMake(width, ceil(textSize.height));

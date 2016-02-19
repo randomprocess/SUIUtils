@@ -45,6 +45,7 @@ NSLog((uXCODE_COLORS_ESCAPE colors eFormat uXCODE_COLORS_RESET), __PRETTY_FUNCTI
 #define SUILogSize(size) SUIExtensionLog3(@"fg89,89,207;", @"\n%s\n<%d> %s ⤭ %@ ⤪[;", NSStringFromCGSize(size))
 #define SUILogPoint(point) SUIExtensionLog3(@"fg89,89,207;", @"\n%s\n<%d> %s ⤭ %@ ⤪[;", NSStringFromCGPoint(point))
 #define SUILogEdgeInsets(edgeInsets) SUIExtensionLog3(@"fg89,89,207;", @"\n%s\n<%d> %s ⤭ %@ ⤪[;", NSStringFromUIEdgeInsets(edgeInsets))
+#define SUILogLine SUIExtensionLog(@"fg217,56,41;", @"\n%s\n<%d> ----- ----- ----- -----",)
 
 #define SUIAssert(condition, format, ...) \
 do { \

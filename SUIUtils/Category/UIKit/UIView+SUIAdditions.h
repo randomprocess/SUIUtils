@@ -89,8 +89,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nullable,readonly,copy) __kindof UIViewController *sui_currentVC;
 
-- (nullable __kindof UIView *)sui_firstSubviewOfClass:(Class)aClass;
-- (nullable __kindof UIView *)sui_firstSupviewOfClass:(Class)aClass;
+- (nullable __kindof UIView *)sui_findSubview:(NSString *)className;
+- (nullable __kindof UIView *)sui_findSupview:(NSString *)className;
 
 
 /*o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o*
