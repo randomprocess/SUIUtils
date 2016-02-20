@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
 s.name         = 'SUIUtils'
-s.version      = '0.0.1'
+s.version      = '0.0.2'
 s.platform     = :ios, '7.0'
 s.summary      = 'A collection of convenient classes for iOS.'
 
@@ -30,6 +30,12 @@ end
 s.subspec 'UIKit' do |ss|
 ss.dependency 'SUIUtils/Foundation'
 ss.source_files = 'SUIUtils/UIKit/*.{h,m}'
+end
+
+s.subspec 'Helper' do |ss|
+ss.dependency 'SUIUtils/UIKit'
+ss.dependency 'UITableView+FDTemplateLayoutCell', '~> 1.4'
+ss.source_files = 'SUIUtils/Helper/*.{h,m}'
 end
 
 end

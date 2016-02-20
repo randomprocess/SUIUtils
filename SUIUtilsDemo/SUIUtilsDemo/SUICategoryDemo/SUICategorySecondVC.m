@@ -26,6 +26,9 @@
     SUILogObj(self.sui_sourceVC);
 
     SUILogLine
+    
+        
+    [self.sui_tableView sui_reloadDataAry:@[@"1", @"2"]];
 }
 
 

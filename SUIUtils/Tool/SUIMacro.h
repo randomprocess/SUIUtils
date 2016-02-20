@@ -97,6 +97,7 @@ SUIAssert(kNilOrNull(param) == NO, format, ##__VA_ARGS__)
 #define kPathOfDocument [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject]
 #define kURLOfDocument [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject]
 
+#define kPathOfCaches [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject]
 #define kPathOfTmp NSTemporaryDirectory()
 #define kPathOfHome NSHomeDirectory()
 

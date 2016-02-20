@@ -43,6 +43,15 @@
 		6DA05D031C7719E300FFE4A9 /* UIButton+SVVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA05D021C7719E300FFE4A9 /* UIButton+SVVAdditions.m */; };
 		6DA05D061C771A9500FFE4A9 /* UILabel+SVVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA05D051C771A9500FFE4A9 /* UILabel+SVVAdditions.m */; };
 		6DA05D091C771B9A00FFE4A9 /* UIView+SVVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA05D081C771B9A00FFE4A9 /* UIView+SVVAdditions.m */; };
+		6DB118DE1C78187700678885 /* SUITableHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB118DD1C78187700678885 /* SUITableHelper.m */; };
+		6DB119021C78379800678885 /* UITableViewCell+SUIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB119011C78379800678885 /* UITableViewCell+SUIAdditions.m */; };
+		6DB119051C78388600678885 /* UITableViewCell+SUIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB119041C78388600678885 /* UITableViewCell+SUIHelper.m */; };
+		6DB1190F1C7839A700678885 /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB119081C7839A700678885 /* UITableView+FDIndexPathHeightCache.m */; };
+		6DB119101C7839A700678885 /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB1190A1C7839A700678885 /* UITableView+FDKeyedHeightCache.m */; };
+		6DB119111C7839A700678885 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB1190C1C7839A700678885 /* UITableView+FDTemplateLayoutCell.m */; };
+		6DB119121C7839A700678885 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB1190E1C7839A700678885 /* UITableView+FDTemplateLayoutCellDebug.m */; };
+		6DB119151C783D7000678885 /* UITableView+SUIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB119141C783D7000678885 /* UITableView+SUIHelper.m */; };
+		6DB119181C7842E000678885 /* SUICategorySecondCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB119171C7842E000678885 /* SUICategorySecondCell.m */; };
 		6DD4578F1C7162D500425C9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD4578E1C7162D500425C9A /* main.m */; };
 		6DD457921C7162D500425C9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD457911C7162D500425C9A /* AppDelegate.m */; };
 		6DD457981C7162D500425C9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DD457961C7162D500425C9A /* Main.storyboard */; };
@@ -134,6 +143,24 @@
 		6DA05D051C771A9500FFE4A9 /* UILabel+SVVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+SVVAdditions.m"; sourceTree = "<group>"; };
 		6DA05D071C771B9A00FFE4A9 /* UIView+SVVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SVVAdditions.h"; sourceTree = "<group>"; };
 		6DA05D081C771B9A00FFE4A9 /* UIView+SVVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SVVAdditions.m"; sourceTree = "<group>"; };
+		6DB118DC1C78187700678885 /* SUITableHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUITableHelper.h; sourceTree = "<group>"; };
+		6DB118DD1C78187700678885 /* SUITableHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUITableHelper.m; sourceTree = "<group>"; };
+		6DB119001C78379800678885 /* UITableViewCell+SUIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+SUIAdditions.h"; sourceTree = "<group>"; };
+		6DB119011C78379800678885 /* UITableViewCell+SUIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+SUIAdditions.m"; sourceTree = "<group>"; };
+		6DB119031C78388600678885 /* UITableViewCell+SUIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+SUIHelper.h"; sourceTree = "<group>"; };
+		6DB119041C78388600678885 /* UITableViewCell+SUIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+SUIHelper.m"; sourceTree = "<group>"; };
+		6DB119071C7839A700678885 /* UITableView+FDIndexPathHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDIndexPathHeightCache.h"; sourceTree = "<group>"; };
+		6DB119081C7839A700678885 /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
+		6DB119091C7839A700678885 /* UITableView+FDKeyedHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDKeyedHeightCache.h"; sourceTree = "<group>"; };
+		6DB1190A1C7839A700678885 /* UITableView+FDKeyedHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDKeyedHeightCache.m"; sourceTree = "<group>"; };
+		6DB1190B1C7839A700678885 /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
+		6DB1190C1C7839A700678885 /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
+		6DB1190D1C7839A700678885 /* UITableView+FDTemplateLayoutCellDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCellDebug.h"; sourceTree = "<group>"; };
+		6DB1190E1C7839A700678885 /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
+		6DB119131C783D7000678885 /* UITableView+SUIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SUIHelper.h"; sourceTree = "<group>"; };
+		6DB119141C783D7000678885 /* UITableView+SUIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SUIHelper.m"; sourceTree = "<group>"; };
+		6DB119161C7842E000678885 /* SUICategorySecondCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUICategorySecondCell.h; sourceTree = "<group>"; };
+		6DB119171C7842E000678885 /* SUICategorySecondCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUICategorySecondCell.m; sourceTree = "<group>"; };
 		6DD4578A1C7162D500425C9A /* SUIUtilsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SUIUtilsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DD4578E1C7162D500425C9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6DD457901C7162D500425C9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -181,6 +208,8 @@
 				6DA05C901C76ABA400FFE4A9 /* SUICategoryRootVC.m */,
 				6DA05C921C76AC2000FFE4A9 /* SUICategorySecondVC.h */,
 				6DA05C931C76AC2000FFE4A9 /* SUICategorySecondVC.m */,
+				6DB119161C7842E000678885 /* SUICategorySecondCell.h */,
+				6DB119171C7842E000678885 /* SUICategorySecondCell.m */,
 			);
 			path = SUICategoryDemo;
 			sourceTree = "<group>";
@@ -188,6 +217,8 @@
 		6DA05C9E1C76EA2900FFE4A9 /* SUIUtils */ = {
 			isa = PBXGroup;
 			children = (
+				6DB119061C7839A700678885 /* UITableView+FDTemplateLayoutCell */,
+				6DB118DB1C78180500678885 /* Helper */,
 				6DA05C9F1C76EA2900FFE4A9 /* Foundation */,
 				6DA05CB81C76EA2900FFE4A9 /* SUIUtils.h */,
 				6DA05CB91C76EA2900FFE4A9 /* Tool */,
@@ -263,6 +294,8 @@
 				6DA05D051C771A9500FFE4A9 /* UILabel+SVVAdditions.m */,
 				6DA05CCE1C76EA2900FFE4A9 /* UINavigationController+SUIAdditions.h */,
 				6DA05CCF1C76EA2900FFE4A9 /* UINavigationController+SUIAdditions.m */,
+				6DB119001C78379800678885 /* UITableViewCell+SUIAdditions.h */,
+				6DB119011C78379800678885 /* UITableViewCell+SUIAdditions.m */,
 				6DA05CD01C76EA2900FFE4A9 /* UIScrollView+SUIAdditions.h */,
 				6DA05CD11C76EA2900FFE4A9 /* UIScrollView+SUIAdditions.m */,
 				6DA05CD21C76EA2900FFE4A9 /* UIStoryboardSegue+SUIAdditions.h */,
@@ -281,6 +314,34 @@
 				6DA05CFF1C77180F00FFE4A9 /* UIViewController+SVVAdditions.m */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		6DB118DB1C78180500678885 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				6DB118DC1C78187700678885 /* SUITableHelper.h */,
+				6DB118DD1C78187700678885 /* SUITableHelper.m */,
+				6DB119031C78388600678885 /* UITableViewCell+SUIHelper.h */,
+				6DB119041C78388600678885 /* UITableViewCell+SUIHelper.m */,
+				6DB119131C783D7000678885 /* UITableView+SUIHelper.h */,
+				6DB119141C783D7000678885 /* UITableView+SUIHelper.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		6DB119061C7839A700678885 /* UITableView+FDTemplateLayoutCell */ = {
+			isa = PBXGroup;
+			children = (
+				6DB119071C7839A700678885 /* UITableView+FDIndexPathHeightCache.h */,
+				6DB119081C7839A700678885 /* UITableView+FDIndexPathHeightCache.m */,
+				6DB119091C7839A700678885 /* UITableView+FDKeyedHeightCache.h */,
+				6DB1190A1C7839A700678885 /* UITableView+FDKeyedHeightCache.m */,
+				6DB1190B1C7839A700678885 /* UITableView+FDTemplateLayoutCell.h */,
+				6DB1190C1C7839A700678885 /* UITableView+FDTemplateLayoutCell.m */,
+				6DB1190D1C7839A700678885 /* UITableView+FDTemplateLayoutCellDebug.h */,
+				6DB1190E1C7839A700678885 /* UITableView+FDTemplateLayoutCellDebug.m */,
+			);
+			path = "UITableView+FDTemplateLayoutCell";
 			sourceTree = "<group>";
 		};
 		6DD457811C7162D500425C9A = {
@@ -445,11 +506,16 @@
 				6DA05C911C76ABA400FFE4A9 /* SUICategoryRootVC.m in Sources */,
 				6DA05CE51C76EA2900FFE4A9 /* NSString+SUIAdditions.m in Sources */,
 				6DA05CE11C76EA2900FFE4A9 /* NSDictionary+SUISafeAccess.m in Sources */,
+				6DB119181C7842E000678885 /* SUICategorySecondCell.m in Sources */,
+				6DB119121C7839A700678885 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
+				6DB118DE1C78187700678885 /* SUITableHelper.m in Sources */,
 				6DA05D001C77180F00FFE4A9 /* UIViewController+SVVAdditions.m in Sources */,
 				6DA05CF01C76EA2900FFE4A9 /* UILabel+SUIAdditions.m in Sources */,
 				6DA05CE21C76EA2900FFE4A9 /* NSIndexPath+SUIAdditions.m in Sources */,
 				6DA05CE41C76EA2900FFE4A9 /* NSObject+SUIAdditions.m in Sources */,
+				6DB119021C78379800678885 /* UITableViewCell+SUIAdditions.m in Sources */,
 				6DA05CE61C76EA2900FFE4A9 /* NSString+SUICrypto.m in Sources */,
+				6DB119111C7839A700678885 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				6DA05CE81C76EA2900FFE4A9 /* SUITool+Camera.m in Sources */,
 				6DA05CEC1C76EA2900FFE4A9 /* SUITool.m in Sources */,
 				6DA05CEF1C76EA2900FFE4A9 /* UIImage+SUIAdditions.m in Sources */,
@@ -458,7 +524,9 @@
 				6DA05D091C771B9A00FFE4A9 /* UIView+SVVAdditions.m in Sources */,
 				6DA05CF31C76EA2900FFE4A9 /* UIStoryboardSegue+SUIAdditions.m in Sources */,
 				6DA05CF71C76EA2900FFE4A9 /* UIViewController+SUIAdditions.m in Sources */,
+				6DB1190F1C7839A700678885 /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				6DA05CE91C76EA2900FFE4A9 /* SUITool+Delay.m in Sources */,
+				6DB119151C783D7000678885 /* UITableView+SUIHelper.m in Sources */,
 				6DA05D061C771A9500FFE4A9 /* UILabel+SVVAdditions.m in Sources */,
 				6DA05C941C76AC2000FFE4A9 /* SUICategorySecondVC.m in Sources */,
 				6DA05CF51C76EA2900FFE4A9 /* UITextView+SUIAdditions.m in Sources */,
@@ -466,6 +534,8 @@
 				6DD4578F1C7162D500425C9A /* main.m in Sources */,
 				6DA05CF41C76EA2900FFE4A9 /* UITextField+SUIAdditions.m in Sources */,
 				6DA05CEB1C76EA2900FFE4A9 /* SUITool+OpenURL.m in Sources */,
+				6DB119101C7839A700678885 /* UITableView+FDKeyedHeightCache.m in Sources */,
+				6DB119051C78388600678885 /* UITableViewCell+SUIHelper.m in Sources */,
 				6DA05CF11C76EA2900FFE4A9 /* UINavigationController+SUIAdditions.m in Sources */,
 				6DA05CE01C76EA2900FFE4A9 /* NSDictionary+SUIAdditions.m in Sources */,
 				6DA05CE71C76EA2900FFE4A9 /* NSString+SUIRegex.m in Sources */,

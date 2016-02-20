@@ -52,6 +52,7 @@
 #import "UIView+SUIAdditions.h"
 #import "UIViewController+SUIAdditions.h"
 #import "UINavigationController+SUIAdditions.h"
+#import "UITableViewCell+SUIAdditions.h"
 #import "UIButton+SUIAdditions.h"
 #import "UIControl+SUIAdditions.h"
 #import "UILabel+SUIAdditions.h"
@@ -64,6 +65,15 @@
 #import "UILabel+SVVAdditions.h"
 #import "UIView+SVVAdditions.h"
 #import "UIViewController+SVVAdditions.h"
+
+
+/*o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o*
+ *  Helper
+ *o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~*/
+
+#import "SUITableHelper.h"
+#import "UITableViewCell+SUIHelper.h"
+#import "UITableView+SUIHelper.h"
 
 
 #endif /* SUIUtils_h */

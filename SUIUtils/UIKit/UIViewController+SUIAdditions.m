@@ -202,6 +202,7 @@ void sui_segue(void) {
         curNav.topViewController.sui_sourceVC = sourceVC;
     } else {
         destVC.sui_sourceVC = sourceVC;
+        destVC.hidesBottomBarWhenPushed = YES;
     }
 }
 
