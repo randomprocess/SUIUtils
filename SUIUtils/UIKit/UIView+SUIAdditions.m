@@ -105,13 +105,30 @@
 {
     return CGRectGetMaxY(self.frame);
 }
+
 - (CGFloat)sui_centerX
 {
     return CGRectGetMidX(self.frame);
 }
+- (void)setSui_centerX:(CGFloat)sui_centerX
+{
+    CGPoint curCenter = self.center;
+    if (curCenter.x != sui_centerX) {
+        curCenter.x = sui_centerX;
+        self.center = curCenter;
+    }
+}
 - (CGFloat)sui_centerY
 {
     return CGRectGetMidY(self.frame);
+}
+- (void)setSui_centerY:(CGFloat)sui_centerY
+{
+    CGPoint curCenter = self.center;
+    if (curCenter.y != sui_centerY) {
+        curCenter.y = sui_centerY;
+        self.center = curCenter;
+    }
 }
 
 
