@@ -24,6 +24,7 @@ ss.source_files = 'SUIUtils/Tool/*.{h,m}'
 end
 
 s.subspec 'Foundation' do |ss|
+ss.dependency 'SUIUtils/Tool'
 ss.source_files = 'SUIUtils/Foundation/*.{h,m}'
 end
 

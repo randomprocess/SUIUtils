@@ -76,7 +76,7 @@
     id curModel = [self currentModelAtIndexPath:indexPath];
     NSString *curCellIdentifier = [self cellIdentifierForRowAtIndexPath:indexPath model:curModel];
     curCell = [tableView dequeueReusableCellWithIdentifier:curCellIdentifier forIndexPath:indexPath];
-    SUIAssert(curCell, @"cell if nil Identifier ⤭ %@ ⤪", curCellIdentifier);
+    SUIAssert(curCell, @"cell is nil Identifier ⤭ %@ ⤪", curCellIdentifier);
     
     if ([curCell respondsToSelector:@selector(sui_willDisplayWithModel:)]) {
         [curCell sui_willDisplayWithModel:curModel];
@@ -118,11 +118,11 @@
 
 #pragma mark - Handler
 
-- (NSString *)cellIdentifierForRowAtIndexPath:(NSIndexPath *)cIndexPath model:(id)model
+- (NSString *)cellIdentifierForRowAtIndexPath:(NSIndexPath *)cIndexPath model:(id)cModel
 {
     NSString *curCellIdentifier = nil;
     if (self.cellIdentifierBlock) {
-        curCellIdentifier = self.cellIdentifierBlock(cIndexPath, model);
+        curCellIdentifier = self.cellIdentifierBlock(cIndexPath, cModel);
     } else {
         curCellIdentifier = self.cellIdentifier;
     }

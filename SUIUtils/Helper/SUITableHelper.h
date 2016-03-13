@@ -11,8 +11,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NSString * __nonnull (^SUITableHelperCellIdentifierBlock)(NSIndexPath *cIndexPath, id model);
-typedef void (^SUITableHelperDidSelectBlock)(NSIndexPath *cIndexPath, id model);
+typedef NSString * __nonnull (^SUITableHelperCellIdentifierBlock)(NSIndexPath *cIndexPath, id cModel);
+typedef void (^SUITableHelperDidSelectBlock)(NSIndexPath *cIndexPath, id cModel);
 
 @interface SUITableHelper : NSObject <UITableViewDataSource, UITableViewDelegate>
 
