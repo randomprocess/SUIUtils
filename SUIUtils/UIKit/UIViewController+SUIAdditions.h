@@ -52,6 +52,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)sui_prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
 
+/**
+ *  返回storybosrd中指定identifer的控制器
+ *
+ *  @param storyboardName 控制器所在的storyboard
+ *  @param identifier     控制器在storyboard中指定的标识符
+ *
+ *  @return 指定identifer的控制器
+ */
++ (__kindof UIViewController *)sui_viewControllerWithStoryboard:(NSString *)storyboard identifier:(NSString *)identifier;
 
 /*o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o*
  *  Geometry

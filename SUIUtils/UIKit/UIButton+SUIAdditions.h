@@ -77,6 +77,10 @@
 
 @property (nullable,nonatomic,copy) IBInspectable UIColor *sui_imageTintColor;
 
+/**
+ *  set text hex color
+ */
+@property (nullable,assign,nonatomic) IBInspectable NSString *sui_titleHexColor;
 
 /*o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o~o*
  *  Resizable

@@ -39,10 +39,6 @@
 		6DA05CF51C76EA2900FFE4A9 /* UITextView+SUIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA05CD71C76EA2900FFE4A9 /* UITextView+SUIAdditions.m */; };
 		6DA05CF61C76EA2900FFE4A9 /* UIView+SUIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA05CD91C76EA2900FFE4A9 /* UIView+SUIAdditions.m */; };
 		6DA05CF71C76EA2900FFE4A9 /* UIViewController+SUIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA05CDB1C76EA2900FFE4A9 /* UIViewController+SUIAdditions.m */; };
-		6DA05D001C77180F00FFE4A9 /* UIViewController+SVVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA05CFF1C77180F00FFE4A9 /* UIViewController+SVVAdditions.m */; };
-		6DA05D031C7719E300FFE4A9 /* UIButton+SVVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA05D021C7719E300FFE4A9 /* UIButton+SVVAdditions.m */; };
-		6DA05D061C771A9500FFE4A9 /* UILabel+SVVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA05D051C771A9500FFE4A9 /* UILabel+SVVAdditions.m */; };
-		6DA05D091C771B9A00FFE4A9 /* UIView+SVVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA05D081C771B9A00FFE4A9 /* UIView+SVVAdditions.m */; };
 		6DB118DE1C78187700678885 /* SUITableHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB118DD1C78187700678885 /* SUITableHelper.m */; };
 		6DB119021C78379800678885 /* UITableViewCell+SUIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB119011C78379800678885 /* UITableViewCell+SUIAdditions.m */; };
 		6DB119051C78388600678885 /* UITableViewCell+SUIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB119041C78388600678885 /* UITableViewCell+SUIHelper.m */; };
@@ -135,14 +131,6 @@
 		6DA05CD91C76EA2900FFE4A9 /* UIView+SUIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SUIAdditions.m"; sourceTree = "<group>"; };
 		6DA05CDA1C76EA2900FFE4A9 /* UIViewController+SUIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SUIAdditions.h"; sourceTree = "<group>"; };
 		6DA05CDB1C76EA2900FFE4A9 /* UIViewController+SUIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SUIAdditions.m"; sourceTree = "<group>"; };
-		6DA05CFE1C77180F00FFE4A9 /* UIViewController+SVVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SVVAdditions.h"; sourceTree = "<group>"; };
-		6DA05CFF1C77180F00FFE4A9 /* UIViewController+SVVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SVVAdditions.m"; sourceTree = "<group>"; };
-		6DA05D011C7719E300FFE4A9 /* UIButton+SVVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+SVVAdditions.h"; sourceTree = "<group>"; };
-		6DA05D021C7719E300FFE4A9 /* UIButton+SVVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SVVAdditions.m"; sourceTree = "<group>"; };
-		6DA05D041C771A9500FFE4A9 /* UILabel+SVVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+SVVAdditions.h"; sourceTree = "<group>"; };
-		6DA05D051C771A9500FFE4A9 /* UILabel+SVVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+SVVAdditions.m"; sourceTree = "<group>"; };
-		6DA05D071C771B9A00FFE4A9 /* UIView+SVVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SVVAdditions.h"; sourceTree = "<group>"; };
-		6DA05D081C771B9A00FFE4A9 /* UIView+SVVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SVVAdditions.m"; sourceTree = "<group>"; };
 		6DB118DC1C78187700678885 /* SUITableHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUITableHelper.h; sourceTree = "<group>"; };
 		6DB118DD1C78187700678885 /* SUITableHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUITableHelper.m; sourceTree = "<group>"; };
 		6DB119001C78379800678885 /* UITableViewCell+SUIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+SUIAdditions.h"; sourceTree = "<group>"; };
@@ -282,16 +270,12 @@
 			children = (
 				6DA05CC61C76EA2900FFE4A9 /* UIButton+SUIAdditions.h */,
 				6DA05CC71C76EA2900FFE4A9 /* UIButton+SUIAdditions.m */,
-				6DA05D011C7719E300FFE4A9 /* UIButton+SVVAdditions.h */,
-				6DA05D021C7719E300FFE4A9 /* UIButton+SVVAdditions.m */,
 				6DA05CC81C76EA2900FFE4A9 /* UIControl+SUIAdditions.h */,
 				6DA05CC91C76EA2900FFE4A9 /* UIControl+SUIAdditions.m */,
 				6DA05CCA1C76EA2900FFE4A9 /* UIImage+SUIAdditions.h */,
 				6DA05CCB1C76EA2900FFE4A9 /* UIImage+SUIAdditions.m */,
 				6DA05CCC1C76EA2900FFE4A9 /* UILabel+SUIAdditions.h */,
 				6DA05CCD1C76EA2900FFE4A9 /* UILabel+SUIAdditions.m */,
-				6DA05D041C771A9500FFE4A9 /* UILabel+SVVAdditions.h */,
-				6DA05D051C771A9500FFE4A9 /* UILabel+SVVAdditions.m */,
 				6DA05CCE1C76EA2900FFE4A9 /* UINavigationController+SUIAdditions.h */,
 				6DA05CCF1C76EA2900FFE4A9 /* UINavigationController+SUIAdditions.m */,
 				6DB119001C78379800678885 /* UITableViewCell+SUIAdditions.h */,
@@ -306,12 +290,8 @@
 				6DA05CD71C76EA2900FFE4A9 /* UITextView+SUIAdditions.m */,
 				6DA05CD81C76EA2900FFE4A9 /* UIView+SUIAdditions.h */,
 				6DA05CD91C76EA2900FFE4A9 /* UIView+SUIAdditions.m */,
-				6DA05D071C771B9A00FFE4A9 /* UIView+SVVAdditions.h */,
-				6DA05D081C771B9A00FFE4A9 /* UIView+SVVAdditions.m */,
 				6DA05CDA1C76EA2900FFE4A9 /* UIViewController+SUIAdditions.h */,
 				6DA05CDB1C76EA2900FFE4A9 /* UIViewController+SUIAdditions.m */,
-				6DA05CFE1C77180F00FFE4A9 /* UIViewController+SVVAdditions.h */,
-				6DA05CFF1C77180F00FFE4A9 /* UIViewController+SVVAdditions.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -509,7 +489,6 @@
 				6DB119181C7842E000678885 /* SUICategorySecondCell.m in Sources */,
 				6DB119121C7839A700678885 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				6DB118DE1C78187700678885 /* SUITableHelper.m in Sources */,
-				6DA05D001C77180F00FFE4A9 /* UIViewController+SVVAdditions.m in Sources */,
 				6DA05CF01C76EA2900FFE4A9 /* UILabel+SUIAdditions.m in Sources */,
 				6DA05CE21C76EA2900FFE4A9 /* NSIndexPath+SUIAdditions.m in Sources */,
 				6DA05CE41C76EA2900FFE4A9 /* NSObject+SUIAdditions.m in Sources */,
@@ -521,13 +500,11 @@
 				6DA05CEF1C76EA2900FFE4A9 /* UIImage+SUIAdditions.m in Sources */,
 				6DA05CF61C76EA2900FFE4A9 /* UIView+SUIAdditions.m in Sources */,
 				6DA05CED1C76EA2900FFE4A9 /* UIButton+SUIAdditions.m in Sources */,
-				6DA05D091C771B9A00FFE4A9 /* UIView+SVVAdditions.m in Sources */,
 				6DA05CF31C76EA2900FFE4A9 /* UIStoryboardSegue+SUIAdditions.m in Sources */,
 				6DA05CF71C76EA2900FFE4A9 /* UIViewController+SUIAdditions.m in Sources */,
 				6DB1190F1C7839A700678885 /* UITableView+FDIndexPathHeightCache.m in Sources */,
 				6DA05CE91C76EA2900FFE4A9 /* SUITool+Delay.m in Sources */,
 				6DB119151C783D7000678885 /* UITableView+SUIHelper.m in Sources */,
-				6DA05D061C771A9500FFE4A9 /* UILabel+SVVAdditions.m in Sources */,
 				6DA05C941C76AC2000FFE4A9 /* SUICategorySecondVC.m in Sources */,
 				6DA05CF51C76EA2900FFE4A9 /* UITextView+SUIAdditions.m in Sources */,
 				6DA05CEE1C76EA2900FFE4A9 /* UIControl+SUIAdditions.m in Sources */,
@@ -540,7 +517,6 @@
 				6DA05CE01C76EA2900FFE4A9 /* NSDictionary+SUIAdditions.m in Sources */,
 				6DA05CE71C76EA2900FFE4A9 /* NSString+SUIRegex.m in Sources */,
 				6DA05CDD1C76EA2900FFE4A9 /* NSArray+SUISafeAccess.m in Sources */,
-				6DA05D031C7719E300FFE4A9 /* UIButton+SVVAdditions.m in Sources */,
 				6DA05CF21C76EA2900FFE4A9 /* UIScrollView+SUIAdditions.m in Sources */,
 				6DA05CE31C76EA2900FFE4A9 /* NSNumber+SUIAdditions.m in Sources */,
 			);
