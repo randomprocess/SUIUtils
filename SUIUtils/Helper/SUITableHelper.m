@@ -36,11 +36,19 @@
     return _cellIdentifier;
 }
 
+- (void)registerNibs:(NSArray<NSString *> *)cellNibNames
+{
+    if (cellNibNames.count > 0) {
+        [cellNibNames enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            [self.sui_tableView registerNib:[UINib nibWithNibName:obj bundle:nil] forCellReuseIdentifier:obj];
+        }];
+    }
+}
+
 - (void)cellMultipleIdentifier:(SUITableHelperCellIdentifierBlock)cb
 {
     self.cellIdentifierBlock = cb;
 }
-
 
 - (void)didSelect:(SUITableHelperDidSelectBlock)cb
 {
@@ -78,8 +86,8 @@
     curCell = [tableView dequeueReusableCellWithIdentifier:curCellIdentifier forIndexPath:indexPath];
     SUIAssert(curCell, @"cell is nil Identifier ⤭ %@ ⤪", curCellIdentifier);
     
-    if ([curCell respondsToSelector:@selector(sui_willDisplayWithModel:)]) {
-        [curCell sui_willDisplayWithModel:curModel];
+    if ([curCell respondsToSelector:@selector(sui_cellWillDisplayWithModel:indexPath:)]) {
+        [curCell sui_cellWillDisplayWithModel:curModel indexPath:indexPath];
     }
     return curCell;
 }
@@ -91,8 +99,8 @@
         id curModel = [self currentModelAtIndexPath:indexPath];
         NSString *curCellIdentifier = [self cellIdentifierForRowAtIndexPath:indexPath model:curModel];
         curHeight = [tableView fd_heightForCellWithIdentifier:curCellIdentifier cacheByIndexPath:indexPath configuration:^(id cell) {
-            if ([cell respondsToSelector:@selector(sui_willDisplayWithModel:)]) {
-                [cell sui_willDisplayWithModel:curModel];
+            if ([cell respondsToSelector:@selector(sui_cellWillDisplayWithModel:indexPath:)]) {
+                [cell sui_cellWillDisplayWithModel:curModel indexPath:indexPath];
             }
         }];
     } else {
