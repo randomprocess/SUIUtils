@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol SUITableHelperProtocol <NSObject>
 @optional
 
-- (void)sui_willDisplayWithModel:(id)cModel;
+- (void)sui_cellWillDisplayWithModel:(id)cModel indexPath:(NSIndexPath *)cIndexPath;
 
 @end
 

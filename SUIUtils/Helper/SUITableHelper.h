@@ -11,15 +11,30 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef NSString * __nonnull (^SUITableHelperCellIdentifierBlock)(NSIndexPath *cIndexPath, id model);
-typedef void (^SUITableHelperDidSelectBlock)(NSIndexPath *cIndexPath, id model);
+typedef NSString * __nonnull (^SUITableHelperCellIdentifierBlock)(NSIndexPath *cIndexPath, id cModel);
+typedef void (^SUITableHelperDidSelectBlock)(NSIndexPath *cIndexPath, id cModel);
 
 @interface SUITableHelper : NSObject <UITableViewDataSource, UITableViewDelegate>
 
 
+/**
+ *  When using the storyboard and a single cell, set the property inspector same identifier 
+ */
 @property (nullable,nonatomic,copy) NSString *cellIdentifier;
+
+/**
+ *  When using xib, all incoming nib names
+ */
+- (void)registerNibs:(NSArray<NSString *> *)cellNibNames;
+
+/**
+ *  When there are multiple cell, returned identifier in block
+ */
 - (void)cellMultipleIdentifier:(SUITableHelperCellIdentifierBlock)cb;
 
+/**
+ *  If you override tableView:didSelectRowAtIndexPath: method, it will be invalid
+ */
 - (void)didSelect:(SUITableHelperDidSelectBlock)cb;
 
 @property (nonatomic,weak) UITableView *sui_tableView;

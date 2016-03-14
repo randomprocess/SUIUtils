@@ -36,11 +36,22 @@
     return _cellIdentifier;
 }
 
+- (void)registerNibs:(NSArray<NSString *> *)cellNibNames
+{
+    if (cellNibNames.count > 0) {
+        [cellNibNames enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            [self.sui_tableView registerNib:[UINib nibWithNibName:obj bundle:nil] forCellReuseIdentifier:obj];
+        }];
+        if (cellNibNames.count == 1) {
+            self.cellIdentifier = cellNibNames[0];
+        }
+    }
+}
+
 - (void)cellMultipleIdentifier:(SUITableHelperCellIdentifierBlock)cb
 {
     self.cellIdentifierBlock = cb;
 }
-
 
 - (void)didSelect:(SUITableHelperDidSelectBlock)cb
 {
@@ -76,10 +87,10 @@
     id curModel = [self currentModelAtIndexPath:indexPath];
     NSString *curCellIdentifier = [self cellIdentifierForRowAtIndexPath:indexPath model:curModel];
     curCell = [tableView dequeueReusableCellWithIdentifier:curCellIdentifier forIndexPath:indexPath];
-    SUIAssert(curCell, @"cell if nil Identifier ⤭ %@ ⤪", curCellIdentifier);
+    SUIAssert(curCell, @"cell is nil Identifier ⤭ %@ ⤪", curCellIdentifier);
     
-    if ([curCell respondsToSelector:@selector(sui_willDisplayWithModel:)]) {
-        [curCell sui_willDisplayWithModel:curModel];
+    if ([curCell respondsToSelector:@selector(sui_cellWillDisplayWithModel:indexPath:)]) {
+        [curCell sui_cellWillDisplayWithModel:curModel indexPath:indexPath];
     }
     return curCell;
 }
@@ -91,8 +102,8 @@
         id curModel = [self currentModelAtIndexPath:indexPath];
         NSString *curCellIdentifier = [self cellIdentifierForRowAtIndexPath:indexPath model:curModel];
         curHeight = [tableView fd_heightForCellWithIdentifier:curCellIdentifier cacheByIndexPath:indexPath configuration:^(id cell) {
-            if ([cell respondsToSelector:@selector(sui_willDisplayWithModel:)]) {
-                [cell sui_willDisplayWithModel:curModel];
+            if ([cell respondsToSelector:@selector(sui_cellWillDisplayWithModel:indexPath:)]) {
+                [cell sui_cellWillDisplayWithModel:curModel indexPath:indexPath];
             }
         }];
     } else {
@@ -118,11 +129,11 @@
 
 #pragma mark - Handler
 
-- (NSString *)cellIdentifierForRowAtIndexPath:(NSIndexPath *)cIndexPath model:(id)model
+- (NSString *)cellIdentifierForRowAtIndexPath:(NSIndexPath *)cIndexPath model:(id)cModel
 {
     NSString *curCellIdentifier = nil;
     if (self.cellIdentifierBlock) {
-        curCellIdentifier = self.cellIdentifierBlock(cIndexPath, model);
+        curCellIdentifier = self.cellIdentifierBlock(cIndexPath, cModel);
     } else {
         curCellIdentifier = self.cellIdentifier;
     }
