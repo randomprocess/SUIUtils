@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34B708FD1C9553A400CCB2D1 /* SUICategorySecondCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34B708FC1C9553A400CCB2D1 /* SUICategorySecondCell.xib */; };
 		6DA05BDB1C76A99200FFE4A9 /* SUIToolDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA05BDA1C76A99200FFE4A9 /* SUIToolDemo.storyboard */; };
 		6DA05C8E1C76AB2100FFE4A9 /* SUICategoryDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DA05C8D1C76AB2100FFE4A9 /* SUICategoryDemo.storyboard */; };
 		6DA05C911C76ABA400FFE4A9 /* SUICategoryRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA05C901C76ABA400FFE4A9 /* SUICategoryRootVC.m */; };
@@ -67,6 +68,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		34B708FC1C9553A400CCB2D1 /* SUICategorySecondCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SUICategorySecondCell.xib; sourceTree = "<group>"; };
 		6DA05BDA1C76A99200FFE4A9 /* SUIToolDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SUIToolDemo.storyboard; sourceTree = "<group>"; };
 		6DA05C8D1C76AB2100FFE4A9 /* SUICategoryDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SUICategoryDemo.storyboard; sourceTree = "<group>"; };
 		6DA05C8F1C76ABA400FFE4A9 /* SUICategoryRootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUICategoryRootVC.h; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				6DA05C931C76AC2000FFE4A9 /* SUICategorySecondVC.m */,
 				6DB119161C7842E000678885 /* SUICategorySecondCell.h */,
 				6DB119171C7842E000678885 /* SUICategorySecondCell.m */,
+				34B708FC1C9553A400CCB2D1 /* SUICategorySecondCell.xib */,
 			);
 			path = SUICategoryDemo;
 			sourceTree = "<group>";
@@ -457,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DA05BDB1C76A99200FFE4A9 /* SUIToolDemo.storyboard in Resources */,
+				34B708FD1C9553A400CCB2D1 /* SUICategorySecondCell.xib in Resources */,
 				6DD4579D1C7162D500425C9A /* LaunchScreen.storyboard in Resources */,
 				6DD4579A1C7162D500425C9A /* Assets.xcassets in Resources */,
 				6DA05C8E1C76AB2100FFE4A9 /* SUICategoryDemo.storyboard in Resources */,
