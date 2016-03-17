@@ -57,7 +57,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic) IBInspectable BOOL sui_loadNib;
 
-- (instancetype)sui_loadInstanceFromNib;
++ (instancetype)sui_loadInstanceFromNib;
 + (instancetype)sui_loadInstanceFromNibWithName:(NSString *)nibName;
 + (instancetype)sui_loadInstanceFromNibWithName:(NSString *)nibName owner:(nullable id)owner;
 + (instancetype)sui_loadInstanceFromNibWithName:(NSString *)nibName owner:(nullable id)owner bundle:(NSBundle *)bundle;
