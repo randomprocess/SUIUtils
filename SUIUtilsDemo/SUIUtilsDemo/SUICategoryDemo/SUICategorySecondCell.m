@@ -17,7 +17,7 @@
 @implementation SUICategorySecondCell
 
 
-- (void)sui_cellWillDisplayWithModel:(id)cModel indexPath:(NSIndexPath *)cIndexPath
+- (void)sui_cellWillDisplayWithModel:(id)cModel
 {
     SUILogObj(cModel);
     SUILogLine
